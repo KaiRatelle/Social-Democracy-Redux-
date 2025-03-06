@@ -23,10 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Latest version
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4  # Latest version
         with:
           node-version: 16
 
@@ -39,17 +39,11 @@ jobs:
       - name: Copy game.json to output
         run: cp out/game.json out/html/
 
-      - name: Upload build artifacts (Explicit)
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-output
-          path: out/html
-
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1  # Correct version!
         with:
           path: 'out/html'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4  # Latest version

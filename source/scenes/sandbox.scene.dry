@@ -8,7 +8,6 @@ go-to: sandbox_menu
 
 @sandbox_menu
 
-- @dev: For the modders
 - @disable_end: Disable End In 1934
 - @enable_end: Enable End In 1934
 - @editresources: Edit Resources

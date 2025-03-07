@@ -8,6 +8,7 @@ go-to: sandbox_menu
 
 @sandbox_menu
 
+- @dev: For the modders
 - @disable_end: Disable End In 1934
 - @enable_end: Enable End In 1934
 - @editresources: Edit Resources
@@ -23,7 +24,6 @@ go-to: sandbox_menu
 - @editironfront: Edit Iron Front
 - @editparamilitary: Edit Paramilitary Groups
 - @editreichswehr: Edit Reichswehr and Police
-- @dev: For the modders
 
 @disable_end
 view-if: end_disabled != 1
@@ -2119,10 +2119,3 @@ Q.catholics_other -= 20;
 !}
 
 Lowered Catholics support for Other.
-
-
-@dev
-
-- @why
-
-@why
